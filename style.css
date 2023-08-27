@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'roboto',sans-serif;
+}
+
+.app-web {
+    width: 1200px;
+    padding: 1rem;
+}
+
+header {
+    padding: 16px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .Name a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+header .Name a::before {
+    left:50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    content: "";
+    padding: 3rem 9rem;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+    background-color: rgb(122, 122, 238);
+    border-radius: 20px;
+}
+header .Name a {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px ;
+}
+
+header .lists1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+header .lists1 .lists1-small {
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    top: 0;
+    bottom: 4px;
+    transition: all 0.3s ease;
+    border-radius: 16px;
+    position: relative;
+}
+
+header .lists1 .lists1-small::after {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    background-color: rgb(13, 13, 100);
+}
+
+.header .lists1 .lists1-small::after {
+    width: 70%;
+}
+
+header .lists1 .lists1-small:hover {
+    background-color: rgb(172, 172, 180);
+    cursor: pointer;
+}
+
+
+header .icons {
+    font-size: 1.3rem;
+    padding: 14px 16px;
+    background-color: rgb(178, 77, 41);
+    border-radius: 30px;
+} 
+
+header .icons:hover {
+    background-color: rgb(155, 111, 95);
+    cursor: pointer;
+}
+
+section {
+    margin-top: 3rem;
+    width: 1200px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .footer  {
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .footer .footer_img img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border-radius: 1px solid #fff;
+}
+
+section .footer .screen {
+    display: grid;
+    grid-template-columns: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .footer .screen p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+section .footer .screen h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section .footer .screen h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #605151;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+section .footer .screen .tacts  button{
+    padding: 8px 12px;
+    outline: none;
+    border: 1px solid ;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+
+}
+
+section .footer .screen .tacts button:last-child {
+    background-color: #343434;
+    color: #fff;
+    cursor: pointer;
+}
+
+section .footer .screen .icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    color:#605151 ;
+}
+
+
+nav {
+    margin-top: 7rem;
+    width: 1200px;
+}
+
+nav .navbar p{
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+
+nav .navbar h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+nav .navbar .features-list {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navbar .features-list img {
+    width: 320px;
+    height: 320px;
+    border-radius: 10%;
+}
+
+nav .navbar .features-list .alubums {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+nav .navbar .features-list .antons {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: column;
+    width: 100%;
+    border:1px solid #cccccc;
+    padding: 2rem 2rem;
+    background-color: #625d5d;
+    height: 200px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+nav .navbar .features-list .antons:hover {
+    background-color: #9b9090;
+
+}
+
+nav .navbar .features-list .antons span {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+nav .navbar .features-list .antons h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+nav .navbar .features-list .antons p {
+  text-align: center;
+}
+
+footer .buttons {
+    width: 1200px;
+    margin-top: 4.5rem;
+}
+
+footer .buttons p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer .buttons h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+footer .buttons .levels {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+footer .buttons .levels .ggAlls {
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 4rem;
+    transition: all 0.3s ease;
+}
+
+footer .buttons .levels .ggAlls::after {
+    content: "";
+    display: flex;
+}
+
+footer .buttons .levels .ggAlls:hover {
+    background-color: #eadddd;
+    border: 2px solid #8b9eac;
+}
+
+
+footer .buttons .levels .ggAlls h4 {
+    font-size: 1.6rem;
+}
+
+footer .buttons .levels .ggAlls .colums1 {
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: 100px repeat(2, 1fr);
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .buttons .levels .ggAlls .colums2 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 100px repeat(1, 1fr);
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .buttons .levels .ggAlls .colums1 span p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer .buttons .levels .ggAlls .colums2 span p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav {
+    width: 1200px;
+}
+
+nav .project p {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 1200px
+}
+
+nav .project h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+nav .project .intells {
+    display: flex;
+    grid-template-columns: 400px repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 300px;
+    width: 1200px;
+    margin-top: 3rem;
+}
+
+nav .project .intells .intells-list {
+    margin-top: 5rem;
+    height: 350px;
+    border: 1px solid black;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 14px 30px #ccc;
+}
+
+
+nav .project .intells .intells-list img {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+nav .project .intells .intells-list h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.categori {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .project .intells .intells-list button {
+    padding: 12px 18px;
+    outline: none;
+    border: 1px solid ;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+nav .project .intells .intells-list button a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #605151;
+}
+
+.black {
+    background-color: #343434;
+}
+
+
